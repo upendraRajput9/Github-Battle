@@ -1,0 +1,476 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+body {
+  font-family: 'Rajdhani', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* general classes */
+
+.light{
+  margin: auto 0;
+  color: rgb(218,218,218);
+  
+}
+
+.center {
+  text-align: center;
+}
+
+.margin {
+  margin: 1rem;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px;
+  color: var(---Secondary);
+  background-color: var(---Primary);
+}
+/* flex */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.justify-end {
+  justify-content: end;
+}
+
+.display-flex {
+  display: flex;
+}
+.flex-50 {
+  flex: 0 1 50%;
+}
+.flex-45 {
+  flex: 0 1 45%;
+}
+.flex-40 {
+  flex: 0 1 40%;
+}
+img {
+  width: 100%;
+}
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100%;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+}
+
+.loading-text {
+  font-size: 75px;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+.cards h2 a {
+  text-align: center;
+  font-size: 1.6rem;
+  color: rgb(187, 45, 31);
+  font-weight: 700;
+}
+.cards article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 23%;
+  padding: 2.5rem 1.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  gap: 1rem;
+}
+.cards figure {
+  width: 70%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.cards article ul {
+  width: 100%;
+}
+.cards article ul li {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+}
+.cards article ul a {
+  color: black;
+  font-weight: 550;
+}
+.cards li i {
+  padding-right: 0.5rem;
+}
+
+.tags li {
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+header {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 32px;
+}
+.active-tag {
+  color: rgb(187, 45, 31);
+}
+.active {
+  color: rgb(187, 45, 31);
+}
+
+ header a {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0 0.3rem;
+}
+.light header a {
+  color: rgb(218,218,218);
+}
+.light header .active {
+   color: rgb(187, 45, 31);
+}
+.light main .cards ul li a{
+  color: rgb(218,218,218);
+}
+.battle-front h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 100;
+}
+.battle-front{
+  height: 100vh;
+}
+.battle-front .Instructions {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem 0;
+}
+.battle-front .Instructions article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.battle-front .Instructions article h3 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.battle-front .Instructions div {
+  background-color: rgb(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.battle-front .Instructions div {
+  font-size: 7rem;
+}
+.players div {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+.players label {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+input[type='submit'] {
+  border: none;
+  background-color: rgb(242, 242, 242);
+  color: rgb(199, 199, 199);
+  width: 30%;
+  font-size: 1.5rem;
+  border-radius: 3px;
+}
+fieldset {
+  display: flex;
+  justify-content: space-between;
+}
+input[type='text'] {
+  width: 67%;
+  font-size: 1.5rem;
+  padding: 1px 5px;
+}
+form {
+  width: 46%;
+}
+
+.players span {
+  width: 30%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 1.3rem;
+  background-color: rgb(242, 242, 242);
+}
+.players span button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: red;
+  background-color: inherit;
+  border: none;
+  font-size: 1.3rem;
+}
+.players span figure {
+  width: 20%;
+}
+.players p {
+  font-size: 2rem;
+}
+.battle-btn {
+  font-size: 1.3rem;
+  border: none;
+  font-weight: 100;
+  color: white;
+  background-color: black;
+  width: 25%;
+  border-radius: 4px;
+  padding: 5px 0;
+}
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.winner-sec section {
+  display: flex;
+  justify-content: center;
+}
+
+/* /// */
+.winner-sec{
+  height: 100vmin;
+}
+.winner-sec h2 a {
+  text-align: center;
+  font-size: 1.6rem;
+  color: rgb(187, 45, 31);
+  font-weight: 700;
+}
+.winner-sec h2 {
+  padding: 1rem 0;
+}
+.winner-sec article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 23%;
+  padding: 2.5rem 1.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0 2rem;
+}
+.winner-sec figure {
+  width: 70%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.winner-sec article ul {
+  width: 100%;
+}
+.winner-sec article ul li {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+}
+.winner-sec article ul a {
+  color: black;
+  font-weight: 550;
+}
+.winner-sec li i {
+  padding-right: 0.5rem;
+}
+.winner-sec section {
+  padding: 2rem 0;
+}
+.winner-sec h4 {
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header figure{
+  width: 4%;
+}
+.tourch{
+  transform: rotate(180deg);
+}
